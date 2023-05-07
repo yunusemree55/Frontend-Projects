@@ -1,0 +1,520 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+section.main{
+
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('images/building.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+    
+
+
+}
+
+nav{
+    padding: 2% 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 170px;
+}
+
+.links{
+    flex: 1;
+    text-align: right;
+    position: relative;
+    
+
+}
+
+nav ul{
+    list-style: none;
+    color: white;
+    
+}
+
+.links ul li{
+    display: inline-block;
+    padding: 3px 10px;
+    
+    font-size: 17px;
+    
+
+}
+
+.links ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.links ul li::after{
+    content: '';
+    width: 0px;
+    height: 2px;
+    background-color: white;
+    display: block;
+    transition: 0.5s;
+    margin: auto;
+}
+
+nav i.fa{
+    display: none;
+}
+
+
+.links ul li:hover::after{
+    width: 100%;
+}
+
+
+.text-box{
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    color: white;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+
+.text-box h1{
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.text-box p{
+    font-size: 17px;
+    margin-bottom: 45px;
+    
+}
+
+
+a.btn{
+
+    text-decoration: none;
+    border:2px solid white;
+    padding: 10px 15px;
+    color: white;
+    background-color: transparent;
+    transition: 0.7s;
+    
+
+
+}
+
+a.btn:hover{
+
+    background-color: white;
+    color: #313491;
+    
+    
+
+
+}
+
+
+@media(max-width:700px){
+
+    nav img{
+        width: 140px;
+    }
+
+    .text-box h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .text-box p{
+        font-size: 15px;
+        margin: 35px 5px;
+    }
+
+    .links ul li{
+        display: block;
+       
+        
+    
+    }
+    .links ul li a{
+        color: black;
+    
+    }
+
+    
+
+    nav i.fa{
+        display: block;
+        margin: 10px;
+        cursor: pointer;
+    }
+    
+
+    .links{
+        background-color: white;
+        height: 100vh;
+        width: 150px;
+        top:0;
+        align-items: center;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        position: absolute;
+        transition: 1s;
+
+    }
+}
+
+
+
+/* Detail */
+
+
+section.detail{
+
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+
+}
+
+h1{
+
+    font-size: 40px;
+    margin-bottom: 15px;
+
+}
+
+p{
+
+    font-size: 15px;
+    opacity: 0.8;
+
+}
+
+
+.row{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .suspect-col{
+    flex-basis: 30%;
+    margin: auto;
+    margin-top: 25px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: #313491;
+    box-sizing: border-box;
+    transition: 0.5s;
+    
+}
+
+.row .suspect-col:hover{
+    
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 54px 55px, rgba(0, 0, 0, 0.2) 0px -12px 30px, rgba(0, 0, 0, 0.2) 0px 4px 6px, rgba(0, 0, 0,0.2) 0px 12px 13px, rgba(0, 0, 0, 0.2) 0px -3px 5px;
+
+    
+}
+
+.row img{
+    width: 200px;
+    
+}
+
+.row .suspect-col h3{
+    font-size: 25px;
+    padding-bottom: 15px;
+    color: white;
+    
+}
+.suspect-col p{
+    color: white;
+    font-size: 15px !important;
+    padding-top: 15px;
+    
+}
+
+@media(max-width:700px){
+
+    .row{
+        flex-direction: column;
+    }
+
+}
+
+
+/* Location */
+
+
+section.location{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.city-col{
+    margin-top: 20px;
+    flex-basis: 32%;
+    box-sizing: border-box;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+section.location img{
+    width: 100%;
+    height: 100%;
+}
+
+.city-col .layer{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    
+}
+
+.city-col .layer:hover{
+    background-color: rgba(0, 0, 0,0.2);
+}
+
+.layer h3{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.5s;
+    
+}
+
+.city-col .layer:hover h3{
+    opacity: 1;
+    bottom: 50%;
+    
+}
+
+
+/* Join Us */
+
+
+section.join-us{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+    margin-bottom: 100px;
+    
+}
+
+
+.application-col{
+    flex-basis: 32%;
+    margin: auto;
+    
+    margin-top: 25px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: rgb(238, 238, 238);
+    transition: 0.5s;
+}
+
+.application-col:hover{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 54px 55px, rgba(0, 0, 0, 0.05) 0px -12px 30px, rgba(0, 0, 0, 0.05) 0px 4px 6px, rgba(0, 0, 0,0.05) 0px 12px 13px, rgba(0, 0, 0, 0.05) 0px -3px 5px;
+
+}
+
+.application-col h3{
+    color: black;
+    font-size: 25px;
+    padding: 12px 5px;
+}
+
+.application-col p{
+    opacity: 0.7;
+}
+
+.application-col img{ 
+    width: 100%;
+    border-radius: 12px;
+}
+
+
+/* Comment */
+
+section.comment{
+    width: 80%;
+    margin: auto;
+    /* padding-top: 100px; */
+    text-align: center;
+
+}
+
+
+.comment-col{
+    padding-top: 10px;
+    background-color: #313491;
+    flex-basis: 45%;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    display: flex;
+    cursor: pointer;
+
+}
+
+.comment-col img{
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    
+}
+.comment-col div{
+    margin: auto;
+    text-align: start;
+    color: white;
+}
+.comment-col div p{
+    padding: 10px 20px;
+    opacity: 1;
+    font-style: italic;
+}
+
+.comment-col div h3{
+    padding: 10px 20px;
+    text-align: end;
+}
+
+
+@media(max-width:700px){
+
+    .comment-col img{
+        margin-top: 5%;
+        height: 70px;
+        
+        
+    }
+
+    .comment-col div p{
+        font-size: 14px;
+    }
+
+}
+
+
+/* Agency */
+
+section.agency{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    border-radius: 12px;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("images/FBI-background.png");
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+
+section.agency h1{
+    
+    color: white;
+    font-weight: 600;
+   
+}
+
+section.agency p{
+    color: white;
+    margin-bottom: 40px;
+}
+
+@media(max-width:700px){
+
+    section.agency h1{
+        font-size: 30px;
+        color: white;
+        font-weight: 600;
+       
+    }
+    
+
+}
+
+
+
+/* Footer */
+
+
+
+section.footer{
+    margin-top: 100px !important;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    background-color: #313491;
+    padding: 40px 0;
+    color: white;
+}
+
+.social-media{
+    margin-top: 25px;
+}
+
+.social-media .fa-brands{
+    cursor: pointer;
+    margin-right: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

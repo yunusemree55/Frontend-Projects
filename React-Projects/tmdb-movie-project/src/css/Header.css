@@ -1,0 +1,24 @@
+header{
+    background-color: #594756;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+header .left-side img{
+    width: 150px;
+}
+
+.center-side{
+    width: 500px;
+}
+
+.center-side input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+}

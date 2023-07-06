@@ -1,0 +1,10 @@
+*{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+  background-color: #948692;
+  color: white;
+  min-height: 100vh;
+  position: relative;
+}

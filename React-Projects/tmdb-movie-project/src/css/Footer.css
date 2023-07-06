@@ -1,0 +1,43 @@
+footer{
+    padding: 50px 0px;
+    background-color: #594756;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer .fa-brands{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0px 5px;
+    transition: 0.5s;
+    color: white;
+    
+}
+
+.fa-brands:hover{
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+}
+
+.fa-instagram{
+    background-color: #E4405F;
+}
+
+
+.fa-twitter{
+    background-color: #1DA1F2;
+}
+
+.fa-linkedin{
+    color: #0A66C2 !important;
+    background-color: white;
+}
+
+.fa-github{
+    background-color: #333;
+    color: white;
+}

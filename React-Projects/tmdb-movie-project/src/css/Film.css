@@ -1,0 +1,47 @@
+div.filmList{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 200px;
+}
+
+
+div.card{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 250px;
+    height: 450px;
+    margin: 10px 10px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.5s;
+
+}
+
+div.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+div.card .photo{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.card .content-side{
+    margin-top: 10px;
+}
+
+
+.card .detail-side{
+    display: flex;
+    margin-top: 10px;
+}
+
+
+
+
